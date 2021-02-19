@@ -7,13 +7,13 @@ class ClockWidget extends StatefulWidget {
 }
 
 class _ClockWidgetState extends State<ClockWidget> {
-  // @override
-  // void initState() {
-  //   Timer.periodic(Duration(seconds: 1), (timer) {
-  //     setState(() {});
-  //   });
-  //   super.initState();
-  // }
+  @override
+  void initState() {
+    Timer.periodic(Duration(seconds: 1), (timer) {
+      setState(() {});
+    });
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
